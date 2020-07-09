@@ -1,0 +1,14 @@
+#platform : ios, '9.0'
+target 'JTMDM' do
+use_frameworks!
+
+pod 'Alamofire'
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'SnapKit'
+pod 'SwiftyJSON'
+pod 'Alamofire'
+pod 'Moya/RxSwift'
+pod 'Kingfisher'
+pod 'RxDataSources'
+end

@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		731E3A9424A1A07C0031418E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3A9324A1A07C0031418E /* AppDelegate.swift */; };
-		731E3A9624A1A07C0031418E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3A9524A1A07C0031418E /* SceneDelegate.swift */; };
-		731E3A9824A1A07C0031418E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3A9724A1A07C0031418E /* ViewController.swift */; };
 		731E3A9B24A1A07C0031418E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731E3A9924A1A07C0031418E /* Main.storyboard */; };
 		731E3A9D24A1A0850031418E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731E3A9C24A1A0850031418E /* Assets.xcassets */; };
 		731E3AA024A1A0850031418E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731E3A9E24A1A0850031418E /* LaunchScreen.storyboard */; };
 		731E3AAB24A1A0850031418E /* JTMDMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3AAA24A1A0850031418E /* JTMDMTests.swift */; };
 		731E3AB624A1A0850031418E /* JTMDMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3AB524A1A0850031418E /* JTMDMUITests.swift */; };
+		731E3AC824A1A5640031418E /* NTNavigationVCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3AC724A1A5640031418E /* NTNavigationVCtrl.swift */; };
+		731E3AE024A1A91F0031418E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3ADF24A1A91F0031418E /* TabBarViewController.swift */; };
+		73D8409D24B4892800A064AB /* MineData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D8401B24B4892700A064AB /* MineData.plist */; };
+		73D840C924B4892800A064AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D8409A24B4892800A064AB /* Assets.xcassets */; };
+		73D840CB24B48A3D00A064AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840CA24B48A3D00A064AB /* HomeViewController.swift */; };
+		73D840CD24B48A4A00A064AB /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840CC24B48A4A00A064AB /* ApplicationViewController.swift */; };
+		73D840CF24B48A5200A064AB /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840CE24B48A5200A064AB /* MsgViewController.swift */; };
+		73D840D124B48A5B00A064AB /* DocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840D024B48A5B00A064AB /* DocViewController.swift */; };
+		73D840D324B48A6600A064AB /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840D224B48A6600A064AB /* MineViewController.swift */; };
+		9509DA784C30572D1C2FDCB9 /* Pods_JTMDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4722860BBD24E8609080C3B8 /* Pods_JTMDM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		362F139FC7652EB44CB0DDBB /* Pods-JTMDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTMDM.debug.xcconfig"; path = "Target Support Files/Pods-JTMDM/Pods-JTMDM.debug.xcconfig"; sourceTree = "<group>"; };
+		4722860BBD24E8609080C3B8 /* Pods_JTMDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTMDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		731E3A9024A1A07C0031418E /* JTMDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTMDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731E3A9324A1A07C0031418E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		731E3A9524A1A07C0031418E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		731E3A9724A1A07C0031418E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		731E3A9A24A1A07C0031418E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		731E3A9C24A1A0850031418E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		731E3A9F24A1A0850031418E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,16 @@
 		731E3AB124A1A0850031418E /* JTMDMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTMDMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		731E3AB524A1A0850031418E /* JTMDMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTMDMUITests.swift; sourceTree = "<group>"; };
 		731E3AB724A1A0850031418E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731E3AC724A1A5640031418E /* NTNavigationVCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTNavigationVCtrl.swift; sourceTree = "<group>"; };
+		731E3ADF24A1A91F0031418E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		73D8401B24B4892700A064AB /* MineData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MineData.plist; sourceTree = "<group>"; };
+		73D8409A24B4892800A064AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73D840CA24B48A3D00A064AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73D840CC24B48A4A00A064AB /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		73D840CE24B48A5200A064AB /* MsgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
+		73D840D024B48A5B00A064AB /* DocViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
+		73D840D224B48A6600A064AB /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		AF9C577867B85B07D4F278E9 /* Pods-JTMDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTMDM.release.xcconfig"; path = "Target Support Files/Pods-JTMDM/Pods-JTMDM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9509DA784C30572D1C2FDCB9 /* Pods_JTMDM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				731E3AA924A1A0850031418E /* JTMDMTests */,
 				731E3AB424A1A0850031418E /* JTMDMUITests */,
 				731E3A9124A1A07C0031418E /* Products */,
+				F272851FF85FAB213F9C4579 /* Pods */,
+				BAA7ED7060F47259D241FD3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +120,11 @@
 		731E3A9224A1A07C0031418E /* JTMDM */ = {
 			isa = PBXGroup;
 			children = (
-				731E3A9324A1A07C0031418E /* AppDelegate.swift */,
-				731E3A9524A1A07C0031418E /* SceneDelegate.swift */,
-				731E3A9724A1A07C0031418E /* ViewController.swift */,
-				731E3A9924A1A07C0031418E /* Main.storyboard */,
-				731E3A9C24A1A0850031418E /* Assets.xcassets */,
-				731E3A9E24A1A0850031418E /* LaunchScreen.storyboard */,
+				73D8401324B4892700A064AB /* Main */,
+				73D8406F24B4892700A064AB /* Expand */,
+				73D8409924B4892800A064AB /* Resource（资源） */,
+				73D8409824B4892800A064AB /* Vender（第三方） */,
+				73D8405424B4892700A064AB /* Other（其他） */,
 				731E3AA124A1A0850031418E /* Info.plist */,
 			);
 			path = JTMDM;
@@ -128,6 +148,423 @@
 			path = JTMDMUITests;
 			sourceTree = "<group>";
 		};
+		73D8401324B4892700A064AB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				73D8402124B4892700A064AB /* Home（首页） */,
+				73D8404224B4892700A064AB /* Application（应用） */,
+				73D8404E24B4892700A064AB /* Msg（消息） */,
+				73D8404824B4892700A064AB /* Doc（文档） */,
+				73D8401424B4892700A064AB /* Mine（我的） */,
+				73D8402724B4892700A064AB /* Other */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		73D8401424B4892700A064AB /* Mine（我的） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8401524B4892700A064AB /* Controller */,
+				73D8401A24B4892700A064AB /* Model */,
+				73D8402024B4892700A064AB /* View */,
+			);
+			path = "Mine（我的）";
+			sourceTree = "<group>";
+		};
+		73D8401524B4892700A064AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73D840D224B48A6600A064AB /* MineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73D8401A24B4892700A064AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73D8401B24B4892700A064AB /* MineData.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73D8402024B4892700A064AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D8402124B4892700A064AB /* Home（首页） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8402224B4892700A064AB /* Controller */,
+				73D8402524B4892700A064AB /* Model */,
+				73D8402624B4892700A064AB /* View */,
+			);
+			path = "Home（首页）";
+			sourceTree = "<group>";
+		};
+		73D8402224B4892700A064AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73D840CA24B48A3D00A064AB /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73D8402524B4892700A064AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73D8402624B4892700A064AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D8402724B4892700A064AB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				73D8402824B4892700A064AB /* Navigation（导航条） */,
+				73D8402B24B4892700A064AB /* Release（发布器） */,
+				73D8402E24B4892700A064AB /* AppUpDate（升级App） */,
+				73D8402F24B4892700A064AB /* TabBar */,
+				73D8403224B4892700A064AB /* Public（公用） */,
+				73D8403D24B4892700A064AB /* Setting（设置） */,
+				73D8403E24B4892700A064AB /* Login（登录相关） */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		73D8402824B4892700A064AB /* Navigation（导航条） */ = {
+			isa = PBXGroup;
+			children = (
+				731E3AC724A1A5640031418E /* NTNavigationVCtrl.swift */,
+			);
+			path = "Navigation（导航条）";
+			sourceTree = "<group>";
+		};
+		73D8402B24B4892700A064AB /* Release（发布器） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Release（发布器）";
+			sourceTree = "<group>";
+		};
+		73D8402E24B4892700A064AB /* AppUpDate（升级App） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "AppUpDate（升级App）";
+			sourceTree = "<group>";
+		};
+		73D8402F24B4892700A064AB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				731E3ADF24A1A91F0031418E /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		73D8403224B4892700A064AB /* Public（公用） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Public（公用）";
+			sourceTree = "<group>";
+		};
+		73D8403D24B4892700A064AB /* Setting（设置） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Setting（设置）";
+			sourceTree = "<group>";
+		};
+		73D8403E24B4892700A064AB /* Login（登录相关） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8403F24B4892700A064AB /* Controller */,
+				73D8404024B4892700A064AB /* Model */,
+				73D8404124B4892700A064AB /* View */,
+			);
+			path = "Login（登录相关）";
+			sourceTree = "<group>";
+		};
+		73D8403F24B4892700A064AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73D8404024B4892700A064AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73D8404124B4892700A064AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D8404224B4892700A064AB /* Application（应用） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8404324B4892700A064AB /* Controller */,
+				73D8404624B4892700A064AB /* Model */,
+				73D8404724B4892700A064AB /* View */,
+			);
+			path = "Application（应用）";
+			sourceTree = "<group>";
+		};
+		73D8404324B4892700A064AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73D840CC24B48A4A00A064AB /* ApplicationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73D8404624B4892700A064AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73D8404724B4892700A064AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D8404824B4892700A064AB /* Doc（文档） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8404924B4892700A064AB /* Controller */,
+				73D8404C24B4892700A064AB /* Model */,
+				73D8404D24B4892700A064AB /* View */,
+			);
+			path = "Doc（文档）";
+			sourceTree = "<group>";
+		};
+		73D8404924B4892700A064AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73D840D024B48A5B00A064AB /* DocViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73D8404C24B4892700A064AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73D8404D24B4892700A064AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D8404E24B4892700A064AB /* Msg（消息） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8404F24B4892700A064AB /* Controller */,
+				73D8405224B4892700A064AB /* Model */,
+				73D8405324B4892700A064AB /* View */,
+			);
+			path = "Msg（消息）";
+			sourceTree = "<group>";
+		};
+		73D8404F24B4892700A064AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73D840CE24B48A5200A064AB /* MsgViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73D8405224B4892700A064AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73D8405324B4892700A064AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D8405424B4892700A064AB /* Other（其他） */ = {
+			isa = PBXGroup;
+			children = (
+				731E3A9924A1A07C0031418E /* Main.storyboard */,
+				731E3A9C24A1A0850031418E /* Assets.xcassets */,
+				731E3A9E24A1A0850031418E /* LaunchScreen.storyboard */,
+				731E3A9324A1A07C0031418E /* AppDelegate.swift */,
+			);
+			path = "Other（其他）";
+			sourceTree = "<group>";
+		};
+		73D8406F24B4892700A064AB /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				73D8407024B4892700A064AB /* DataBase（数据库） */,
+				73D8407124B4892700A064AB /* Const（常量） */,
+				73D8407324B4892700A064AB /* Tool（工具类） */,
+				73D8409324B4892700A064AB /* Other */,
+				73D8409424B4892700A064AB /* Macros */,
+				73D8409624B4892700A064AB /* Category（分类） */,
+				73D8409724B4892700A064AB /* Network（网络） */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		73D8407024B4892700A064AB /* DataBase（数据库） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "DataBase（数据库）";
+			sourceTree = "<group>";
+		};
+		73D8407124B4892700A064AB /* Const（常量） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Const（常量）";
+			sourceTree = "<group>";
+		};
+		73D8407324B4892700A064AB /* Tool（工具类） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8407424B4892700A064AB /* Theme（主题） */,
+				73D8408624B4892700A064AB /* SwitchRootVCTool（选择根控制器） */,
+				73D8408924B4892700A064AB /* ClearCacheTool（清除缓存） */,
+				73D8408A24B4892700A064AB /* BaseService(基本服务) */,
+				73D8408D24B4892700A064AB /* DownloadResources（下载资源） */,
+				73D8409024B4892700A064AB /* Base64Code（base64编码） */,
+			);
+			path = "Tool（工具类）";
+			sourceTree = "<group>";
+		};
+		73D8407424B4892700A064AB /* Theme（主题） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Theme（主题）";
+			sourceTree = "<group>";
+		};
+		73D8408624B4892700A064AB /* SwitchRootVCTool（选择根控制器） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwitchRootVCTool（选择根控制器）";
+			sourceTree = "<group>";
+		};
+		73D8408924B4892700A064AB /* ClearCacheTool（清除缓存） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ClearCacheTool（清除缓存）";
+			sourceTree = "<group>";
+		};
+		73D8408A24B4892700A064AB /* BaseService(基本服务) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "BaseService(基本服务)";
+			sourceTree = "<group>";
+		};
+		73D8408D24B4892700A064AB /* DownloadResources（下载资源） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "DownloadResources（下载资源）";
+			sourceTree = "<group>";
+		};
+		73D8409024B4892700A064AB /* Base64Code（base64编码） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Base64Code（base64编码）";
+			sourceTree = "<group>";
+		};
+		73D8409324B4892700A064AB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		73D8409424B4892700A064AB /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		73D8409624B4892700A064AB /* Category（分类） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Category（分类）";
+			sourceTree = "<group>";
+		};
+		73D8409724B4892700A064AB /* Network（网络） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network（网络）";
+			sourceTree = "<group>";
+		};
+		73D8409824B4892800A064AB /* Vender（第三方） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Vender（第三方）";
+			sourceTree = "<group>";
+		};
+		73D8409924B4892800A064AB /* Resource（资源） */ = {
+			isa = PBXGroup;
+			children = (
+				73D8409A24B4892800A064AB /* Assets.xcassets */,
+			);
+			path = "Resource（资源）";
+			sourceTree = "<group>";
+		};
+		BAA7ED7060F47259D241FD3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4722860BBD24E8609080C3B8 /* Pods_JTMDM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F272851FF85FAB213F9C4579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				362F139FC7652EB44CB0DDBB /* Pods-JTMDM.debug.xcconfig */,
+				AF9C577867B85B07D4F278E9 /* Pods-JTMDM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +572,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 731E3ABA24A1A0850031418E /* Build configuration list for PBXNativeTarget "JTMDM" */;
 			buildPhases = (
+				4DADD0AAD5CCA1B5275F3A1D /* [CP] Check Pods Manifest.lock */,
 				731E3A8C24A1A07C0031418E /* Sources */,
 				731E3A8D24A1A07C0031418E /* Frameworks */,
 				731E3A8E24A1A07C0031418E /* Resources */,
+				8DA90B70F70571810C28F1FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +671,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D840C924B4892800A064AB /* Assets.xcassets in Resources */,
 				731E3AA024A1A0850031418E /* LaunchScreen.storyboard in Resources */,
 				731E3A9D24A1A0850031418E /* Assets.xcassets in Resources */,
 				731E3A9B24A1A07C0031418E /* Main.storyboard in Resources */,
+				73D8409D24B4892800A064AB /* MineData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +695,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DADD0AAD5CCA1B5275F3A1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JTMDM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA90B70F70571810C28F1FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JTMDM/Pods-JTMDM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JTMDM/Pods-JTMDM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JTMDM/Pods-JTMDM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		731E3A8C24A1A07C0031418E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731E3A9824A1A07C0031418E /* ViewController.swift in Sources */,
+				731E3AE024A1A91F0031418E /* TabBarViewController.swift in Sources */,
+				73D840CD24B48A4A00A064AB /* ApplicationViewController.swift in Sources */,
+				731E3AC824A1A5640031418E /* NTNavigationVCtrl.swift in Sources */,
+				73D840D124B48A5B00A064AB /* DocViewController.swift in Sources */,
+				73D840CF24B48A5200A064AB /* MsgViewController.swift in Sources */,
 				731E3A9424A1A07C0031418E /* AppDelegate.swift in Sources */,
-				731E3A9624A1A07C0031418E /* SceneDelegate.swift in Sources */,
+				73D840CB24B48A3D00A064AB /* HomeViewController.swift in Sources */,
+				73D840D324B48A6600A064AB /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +920,7 @@
 		};
 		731E3ABB24A1A0850031418E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362F139FC7652EB44CB0DDBB /* Pods-JTMDM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +938,7 @@
 		};
 		731E3ABC24A1A0850031418E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9C577867B85B07D4F278E9 /* Pods-JTMDM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
