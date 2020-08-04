@@ -15,15 +15,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="在这里展示开机页面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gf-R5-OZu">
-                                <rect key="frame" x="88" y="144" width="238" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_bg" translatesAutoresizingMaskIntoConstraints="NO" id="i2J-NB-oOr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kT1-Vl-4Sz">
+                                <rect key="frame" x="147" y="224" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4hR-xT-cjB"/>
+                                    <constraint firstAttribute="height" constant="120" id="sCD-nN-LKp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市基础设施投资有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gf-R5-OZu">
+                                <rect key="frame" x="94.5" y="364" width="225.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225.5" id="F7H-jV-DS0"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="Ncd-I1-1qn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i2J-NB-oOr" secondAttribute="bottom" id="71t-jU-ou9"/>
+                            <constraint firstItem="kT1-Vl-4Sz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gng-Cm-3vN"/>
+                            <constraint firstItem="i2J-NB-oOr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lAw-q6-N9W"/>
+                            <constraint firstItem="kT1-Vl-4Sz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="mEJ-Rq-uwQ"/>
+                            <constraint firstItem="i2J-NB-oOr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mJj-rg-UFx"/>
+                            <constraint firstItem="2Gf-R5-OZu" firstAttribute="top" secondItem="kT1-Vl-4Sz" secondAttribute="bottom" constant="20" id="sSp-dt-yaI"/>
+                            <constraint firstItem="i2J-NB-oOr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uVI-1m-12P"/>
+                            <constraint firstItem="2Gf-R5-OZu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yau-lA-HKZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -32,4 +55,8 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch_bg" width="1024" height="768"/>
+        <image name="login_logo" width="90" height="90"/>
+    </resources>
 </document>

@@ -14,15 +14,27 @@ class NTNavigationVCtrl: UINavigationController,UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //navigationBar字体颜色设置
-//         self.navigationBar.barTintColor = UIColor.black
-         //navigationBar字体颜色设置
-//         self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
          
-         self.popDelegate = self.interactivePopGestureRecognizer?.delegate
-         self.delegate = self
+        
+        self.popDelegate = self.interactivePopGestureRecognizer?.delegate
+        self.delegate = self
+        self.setNavigationBarTheme()
     }
     
+    func setNavigationBarTheme() {
+//        self.navigationBar.backgroundColor = UIColor.yellow
+        self.navigationBar.tintColor = UIColor.black
+        //navigationBar字体颜色设置
+        self.navigationBar.barTintColor = UIColor.blue
+        //navigationBar字体颜色设置
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        NotificationCenter.default.addObserver(self, selector: #selector(handelNotification(notification:)), name: ThemeNotifacationName, object: nil)
+    }
+    
+    func setBarButtonItemTheme() {
+        
+    }
     //MARK: - UIGestureRecognizerDelegate代理
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         
@@ -45,9 +57,9 @@ class NTNavigationVCtrl: UINavigationController,UINavigationControllerDelegate {
             
             viewController.hidesBottomBarWhenPushed = true
             //添加图片
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "navigation_left_back")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(leftClick))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "nav_back")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(leftClick))
             //添加文字
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: self, action: #selector(leftClick))
+//            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: self, action: #selector(leftClick))
         }
         super.pushViewController(viewController, animated: animated)
         
@@ -56,6 +68,18 @@ class NTNavigationVCtrl: UINavigationController,UINavigationControllerDelegate {
     //返回上一层控制器
     @objc func leftClick()  {
         popViewController(animated: true)
+    }
+    
+    @objc func handelNotification(notification: NSNotification) {
+        guard let theme = notification.object as? ThemeProtocol else {
+            return
+        }
+//        self.view.backgroundColor = theme.backgroundColor
+        self.navigationBar.barTintColor = theme.themeColor
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        print("释放")
     }
 }
          

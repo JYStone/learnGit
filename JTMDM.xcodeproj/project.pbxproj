@@ -15,6 +15,31 @@
 		731E3AB624A1A0850031418E /* JTMDMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3AB524A1A0850031418E /* JTMDMUITests.swift */; };
 		731E3AC824A1A5640031418E /* NTNavigationVCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3AC724A1A5640031418E /* NTNavigationVCtrl.swift */; };
 		731E3AE024A1A91F0031418E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3ADF24A1A91F0031418E /* TabBarViewController.swift */; };
+		7323F45824D7EA20008EA1D1 /* LightAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7323F45724D7EA20008EA1D1 /* LightAppCell.swift */; };
+		7323F45C24D7F078008EA1D1 /* HomeLightAppListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7323F45B24D7F078008EA1D1 /* HomeLightAppListCell.swift */; };
+		7323F46924D7F859008EA1D1 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7323F46824D7F859008EA1D1 /* Bounds.swift */; };
+		7323F46C24D803D9008EA1D1 /* NTAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7323F46B24D803D9008EA1D1 /* NTAlert.swift */; };
+		73865EF324D4122800189435 /* HomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73865EF224D4122800189435 /* HomeBannerCell.swift */; };
+		73865EF724D413C800189435 /* GXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73865EF524D413C700189435 /* GXBanner.swift */; };
+		73865EF824D413C800189435 /* GXBannerFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73865EF624D413C800189435 /* GXBannerFlowLayout.swift */; };
+		73865EFA24D4186900189435 /* GXBannerTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73865EF924D4186900189435 /* GXBannerTestCell.swift */; };
+		73C1E80924C13EA60083B701 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E80824C13EA60083B701 /* ThemeProtocol.swift */; };
+		73C1E80D24C1455D0083B701 /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E80C24C1455D0083B701 /* MainTheme.swift */; };
+		73C1E80F24C145AE0083B701 /* YellowTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E80E24C145AE0083B701 /* YellowTheme.swift */; };
+		73C1E81124C145BE0083B701 /* RedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81024C145BE0083B701 /* RedTheme.swift */; };
+		73C1E81324C145CE0083B701 /* GrassTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81224C145CE0083B701 /* GrassTheme.swift */; };
+		73C1E81524C146AE0083B701 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81424C146AE0083B701 /* LightTheme.swift */; };
+		73C1E81724C146BE0083B701 /* DarkLightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81624C146BE0083B701 /* DarkLightTheme.swift */; };
+		73C1E81924C14A740083B701 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81824C14A740083B701 /* ThemeManager.swift */; };
+		73C1E81B24C158B40083B701 /* NTCommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81A24C158B40083B701 /* NTCommonViewController.swift */; };
+		73C1E81D24C177450083B701 /* NTCommonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81C24C177450083B701 /* NTCommonTableViewController.swift */; };
+		73C1E81F24C17B910083B701 /* ThemeManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E81E24C17B910083B701 /* ThemeManagerProtocol.swift */; };
+		73C1E82124C1DB120083B701 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E82024C1DB120083B701 /* SettingViewController.swift */; };
+		73C1E82724C1F2640083B701 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E82624C1F2640083B701 /* ThemeViewController.swift */; };
+		73C1E82A24CADF350083B701 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E82924CADF350083B701 /* Const.swift */; };
+		73C1E82D24CAF9B80083B701 /* NTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1E82C24CAF9B80083B701 /* NTButton.swift */; };
+		73CAA11024D906BB00FD116A /* LightAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CAA10F24D906BB00FD116A /* LightAppModel.swift */; };
+		73CAA11224D9087A00FD116A /* app010.json in Resources */ = {isa = PBXBuildFile; fileRef = 73CAA11124D9087A00FD116A /* app010.json */; };
 		73D8409D24B4892800A064AB /* MineData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D8401B24B4892700A064AB /* MineData.plist */; };
 		73D840C924B4892800A064AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D8409A24B4892800A064AB /* Assets.xcassets */; };
 		73D840CB24B48A3D00A064AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840CA24B48A3D00A064AB /* HomeViewController.swift */; };
@@ -59,6 +84,31 @@
 		731E3AB724A1A0850031418E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		731E3AC724A1A5640031418E /* NTNavigationVCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTNavigationVCtrl.swift; sourceTree = "<group>"; };
 		731E3ADF24A1A91F0031418E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7323F45724D7EA20008EA1D1 /* LightAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightAppCell.swift; sourceTree = "<group>"; };
+		7323F45B24D7F078008EA1D1 /* HomeLightAppListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLightAppListCell.swift; sourceTree = "<group>"; };
+		7323F46824D7F859008EA1D1 /* Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		7323F46B24D803D9008EA1D1 /* NTAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTAlert.swift; sourceTree = "<group>"; };
+		73865EF224D4122800189435 /* HomeBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCell.swift; sourceTree = "<group>"; };
+		73865EF524D413C700189435 /* GXBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GXBanner.swift; sourceTree = "<group>"; };
+		73865EF624D413C800189435 /* GXBannerFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GXBannerFlowLayout.swift; sourceTree = "<group>"; };
+		73865EF924D4186900189435 /* GXBannerTestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GXBannerTestCell.swift; sourceTree = "<group>"; };
+		73C1E80824C13EA60083B701 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		73C1E80C24C1455D0083B701 /* MainTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTheme.swift; sourceTree = "<group>"; };
+		73C1E80E24C145AE0083B701 /* YellowTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowTheme.swift; sourceTree = "<group>"; };
+		73C1E81024C145BE0083B701 /* RedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTheme.swift; sourceTree = "<group>"; };
+		73C1E81224C145CE0083B701 /* GrassTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrassTheme.swift; sourceTree = "<group>"; };
+		73C1E81424C146AE0083B701 /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		73C1E81624C146BE0083B701 /* DarkLightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkLightTheme.swift; sourceTree = "<group>"; };
+		73C1E81824C14A740083B701 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		73C1E81A24C158B40083B701 /* NTCommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTCommonViewController.swift; sourceTree = "<group>"; };
+		73C1E81C24C177450083B701 /* NTCommonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTCommonTableViewController.swift; sourceTree = "<group>"; };
+		73C1E81E24C17B910083B701 /* ThemeManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManagerProtocol.swift; sourceTree = "<group>"; };
+		73C1E82024C1DB120083B701 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		73C1E82624C1F2640083B701 /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		73C1E82924CADF350083B701 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		73C1E82C24CAF9B80083B701 /* NTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTButton.swift; sourceTree = "<group>"; };
+		73CAA10F24D906BB00FD116A /* LightAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightAppModel.swift; sourceTree = "<group>"; };
+		73CAA11124D9087A00FD116A /* app010.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = app010.json; sourceTree = "<group>"; };
 		73D8401B24B4892700A064AB /* MineData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MineData.plist; sourceTree = "<group>"; };
 		73D8409A24B4892800A064AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73D840CA24B48A3D00A064AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,9 +198,85 @@
 			path = JTMDMUITests;
 			sourceTree = "<group>";
 		};
+		7323F45D24D7F7DC008EA1D1 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		7323F45E24D7F7DC008EA1D1 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		7323F45F24D7F7DC008EA1D1 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		7323F46024D7F7DC008EA1D1 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		7323F46124D7F7DC008EA1D1 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		7323F46224D7F7DC008EA1D1 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				7323F46824D7F859008EA1D1 /* Bounds.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		7323F46324D7F7DC008EA1D1 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		7323F46A24D803C6008EA1D1 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				7323F46B24D803D9008EA1D1 /* NTAlert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		73865EF424D413C700189435 /* GXBanner */ = {
+			isa = PBXGroup;
+			children = (
+				73865EF524D413C700189435 /* GXBanner.swift */,
+				73865EF624D413C800189435 /* GXBannerFlowLayout.swift */,
+			);
+			path = GXBanner;
+			sourceTree = "<group>";
+		};
+		73C1E82B24CAF9730083B701 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				73C1E82C24CAF9B80083B701 /* NTButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		73D8401324B4892700A064AB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				73D8403E24B4892700A064AB /* Login（登录相关） */,
 				73D8402124B4892700A064AB /* Home（首页） */,
 				73D8404224B4892700A064AB /* Application（应用） */,
 				73D8404E24B4892700A064AB /* Msg（消息） */,
@@ -175,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				73D840D224B48A6600A064AB /* MineViewController.swift */,
+				73C1E82024C1DB120083B701 /* SettingViewController.swift */,
+				73C1E82624C1F2640083B701 /* ThemeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +343,8 @@
 		73D8402524B4892700A064AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				73CAA10F24D906BB00FD116A /* LightAppModel.swift */,
+				73CAA11124D9087A00FD116A /* app010.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +352,10 @@
 		73D8402624B4892700A064AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7323F45B24D7F078008EA1D1 /* HomeLightAppListCell.swift */,
+				7323F45724D7EA20008EA1D1 /* LightAppCell.swift */,
+				73865EF224D4122800189435 /* HomeBannerCell.swift */,
+				73865EF924D4186900189435 /* GXBannerTestCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,7 +369,6 @@
 				73D8402F24B4892700A064AB /* TabBar */,
 				73D8403224B4892700A064AB /* Public（公用） */,
 				73D8403D24B4892700A064AB /* Setting（设置） */,
-				73D8403E24B4892700A064AB /* Login（登录相关） */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -273,6 +406,8 @@
 		73D8403224B4892700A064AB /* Public（公用） */ = {
 			isa = PBXGroup;
 			children = (
+				73C1E81A24C158B40083B701 /* NTCommonViewController.swift */,
+				73C1E81C24C177450083B701 /* NTCommonTableViewController.swift */,
 			);
 			path = "Public（公用）";
 			sourceTree = "<group>";
@@ -425,6 +560,8 @@
 		73D8406F24B4892700A064AB /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				7323F46A24D803C6008EA1D1 /* Alert */,
+				73865EF424D413C700189435 /* GXBanner */,
 				73D8407024B4892700A064AB /* DataBase（数据库） */,
 				73D8407124B4892700A064AB /* Const（常量） */,
 				73D8407324B4892700A064AB /* Tool（工具类） */,
@@ -446,6 +583,7 @@
 		73D8407124B4892700A064AB /* Const（常量） */ = {
 			isa = PBXGroup;
 			children = (
+				73C1E82924CADF350083B701 /* Const.swift */,
 			);
 			path = "Const（常量）";
 			sourceTree = "<group>";
@@ -453,6 +591,7 @@
 		73D8407324B4892700A064AB /* Tool（工具类） */ = {
 			isa = PBXGroup;
 			children = (
+				73C1E82B24CAF9730083B701 /* Button */,
 				73D8407424B4892700A064AB /* Theme（主题） */,
 				73D8408624B4892700A064AB /* SwitchRootVCTool（选择根控制器） */,
 				73D8408924B4892700A064AB /* ClearCacheTool（清除缓存） */,
@@ -466,6 +605,15 @@
 		73D8407424B4892700A064AB /* Theme（主题） */ = {
 			isa = PBXGroup;
 			children = (
+				73C1E80824C13EA60083B701 /* ThemeProtocol.swift */,
+				73C1E81824C14A740083B701 /* ThemeManager.swift */,
+				73C1E81E24C17B910083B701 /* ThemeManagerProtocol.swift */,
+				73C1E80C24C1455D0083B701 /* MainTheme.swift */,
+				73C1E80E24C145AE0083B701 /* YellowTheme.swift */,
+				73C1E81024C145BE0083B701 /* RedTheme.swift */,
+				73C1E81224C145CE0083B701 /* GrassTheme.swift */,
+				73C1E81424C146AE0083B701 /* LightTheme.swift */,
+				73C1E81624C146BE0083B701 /* DarkLightTheme.swift */,
 			);
 			path = "Theme（主题）";
 			sourceTree = "<group>";
@@ -522,6 +670,13 @@
 		73D8409624B4892700A064AB /* Category（分类） */ = {
 			isa = PBXGroup;
 			children = (
+				7323F46024D7F7DC008EA1D1 /* NSArray */,
+				7323F45D24D7F7DC008EA1D1 /* NSData */,
+				7323F46124D7F7DC008EA1D1 /* NSDictionary */,
+				7323F45E24D7F7DC008EA1D1 /* NSString */,
+				7323F46224D7F7DC008EA1D1 /* UIImage */,
+				7323F46324D7F7DC008EA1D1 /* UILabel */,
+				7323F45F24D7F7DC008EA1D1 /* UIView */,
 			);
 			path = "Category（分类）";
 			sourceTree = "<group>";
@@ -672,6 +827,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D840C924B4892800A064AB /* Assets.xcassets in Resources */,
+				73CAA11224D9087A00FD116A /* app010.json in Resources */,
 				731E3AA024A1A0850031418E /* LaunchScreen.storyboard in Resources */,
 				731E3A9D24A1A0850031418E /* Assets.xcassets in Resources */,
 				731E3A9B24A1A07C0031418E /* Main.storyboard in Resources */,
@@ -742,13 +898,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C1E80F24C145AE0083B701 /* YellowTheme.swift in Sources */,
 				731E3AE024A1A91F0031418E /* TabBarViewController.swift in Sources */,
 				73D840CD24B48A4A00A064AB /* ApplicationViewController.swift in Sources */,
+				7323F46C24D803D9008EA1D1 /* NTAlert.swift in Sources */,
+				73C1E81124C145BE0083B701 /* RedTheme.swift in Sources */,
+				73C1E82A24CADF350083B701 /* Const.swift in Sources */,
+				7323F45C24D7F078008EA1D1 /* HomeLightAppListCell.swift in Sources */,
+				7323F46924D7F859008EA1D1 /* Bounds.swift in Sources */,
 				731E3AC824A1A5640031418E /* NTNavigationVCtrl.swift in Sources */,
 				73D840D124B48A5B00A064AB /* DocViewController.swift in Sources */,
+				73C1E82724C1F2640083B701 /* ThemeViewController.swift in Sources */,
+				73C1E81B24C158B40083B701 /* NTCommonViewController.swift in Sources */,
+				73C1E81324C145CE0083B701 /* GrassTheme.swift in Sources */,
+				73865EF724D413C800189435 /* GXBanner.swift in Sources */,
+				73C1E81D24C177450083B701 /* NTCommonTableViewController.swift in Sources */,
+				73C1E80D24C1455D0083B701 /* MainTheme.swift in Sources */,
+				73C1E82D24CAF9B80083B701 /* NTButton.swift in Sources */,
+				73C1E81F24C17B910083B701 /* ThemeManagerProtocol.swift in Sources */,
+				73865EF324D4122800189435 /* HomeBannerCell.swift in Sources */,
+				73865EF824D413C800189435 /* GXBannerFlowLayout.swift in Sources */,
 				73D840CF24B48A5200A064AB /* MsgViewController.swift in Sources */,
 				731E3A9424A1A07C0031418E /* AppDelegate.swift in Sources */,
+				73C1E80924C13EA60083B701 /* ThemeProtocol.swift in Sources */,
+				73865EFA24D4186900189435 /* GXBannerTestCell.swift in Sources */,
+				73CAA11024D906BB00FD116A /* LightAppModel.swift in Sources */,
+				73C1E81924C14A740083B701 /* ThemeManager.swift in Sources */,
+				73C1E82124C1DB120083B701 /* SettingViewController.swift in Sources */,
 				73D840CB24B48A3D00A064AB /* HomeViewController.swift in Sources */,
+				73C1E81724C146BE0083B701 /* DarkLightTheme.swift in Sources */,
+				73C1E81524C146AE0083B701 /* LightTheme.swift in Sources */,
+				7323F45824D7EA20008EA1D1 /* LightAppCell.swift in Sources */,
 				73D840D324B48A6600A064AB /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -925,6 +1105,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JTMDM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -943,6 +1124,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JTMDM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
