@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import HandyJSON
 class LightAppModel: Codable {
     var data: Comm?
     class Comm: Codable {
@@ -23,3 +23,4 @@ class LightAppModel: Codable {
         }
     }
 }
+

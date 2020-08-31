@@ -9,30 +9,69 @@
 import UIKit
 
 class RedTheme: ThemeProtocol {
-    var titleTextColor: UIColor {
+    var themeColor: UIColor {
+       get {
+           return UIColor.red
+       }
+    }
+    
+    var auxiliaryColor: UIColor {
         get {
             return UIColor.gray
         }
     }
     
-    var detailTextColor: UIColor {
+    var titleColor: UIColor {
+       get {
+           return UIColor.gray
+       }
+    }
+    
+    var secondaryTextColor: UIColor {
         get {
-            return UIColor.black
+            return UIColor.gray
         }
     }
     
-    var themeColor: UIColor {
+    var auxiliaryTextColor: UIColor {
+       get {
+           return UIColor.gray
+       }
+    }
+    
+    var lineColor: UIColor {
         get {
-            return UIColor.red
+            return UIColor.gray
         }
     }
     
-
+    var wideLineColor: UIColor {
+       get {
+           return UIColor.gray
+       }
+    }
+    
     var backgroundColor: UIColor {
         get {
-            return UIColor.white
+            return UIColor.gray
         }
     }
     
-
+    var navigationTintColor: UIColor {
+       get {
+           return UIColor.white
+       }
+    }
+    
+    var maskDarkColor: UIColor {
+        get {
+            return UIColor.gray
+        }
+    }
+    
+    var placeholderColor: UIColor {
+        get {
+            return UIColor.gray
+        }
+    }
 }

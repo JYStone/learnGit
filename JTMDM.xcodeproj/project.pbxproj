@@ -47,6 +47,11 @@
 		73D840CF24B48A5200A064AB /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840CE24B48A5200A064AB /* MsgViewController.swift */; };
 		73D840D124B48A5B00A064AB /* DocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840D024B48A5B00A064AB /* DocViewController.swift */; };
 		73D840D324B48A6600A064AB /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D840D224B48A6600A064AB /* MineViewController.swift */; };
+		73E8FF8B24EFC441000E79E6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8FF8A24EFC441000E79E6 /* NavigationViewController.swift */; };
+		73E8FF9324F4E9A3000E79E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8FF9224F4E9A3000E79E6 /* LoginViewController.swift */; };
+		73E8FF9524F50F73000E79E6 /* ThemeSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8FF9424F50F73000E79E6 /* ThemeSwitchCell.swift */; };
+		73E8FF9724F5F766000E79E6 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8FF9624F5F766000E79E6 /* BaseTableViewCell.swift */; };
+		73E8FF9924F5F86A000E79E6 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E8FF9824F5F86A000E79E6 /* BaseCollectionViewCell.swift */; };
 		9509DA784C30572D1C2FDCB9 /* Pods_JTMDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4722860BBD24E8609080C3B8 /* Pods_JTMDM.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +121,11 @@
 		73D840CE24B48A5200A064AB /* MsgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
 		73D840D024B48A5B00A064AB /* DocViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
 		73D840D224B48A6600A064AB /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		73E8FF8A24EFC441000E79E6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		73E8FF9224F4E9A3000E79E6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		73E8FF9424F50F73000E79E6 /* ThemeSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitchCell.swift; sourceTree = "<group>"; };
+		73E8FF9624F5F766000E79E6 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		73E8FF9824F5F86A000E79E6 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF9C577867B85B07D4F278E9 /* Pods-JTMDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTMDM.release.xcconfig"; path = "Target Support Files/Pods-JTMDM/Pods-JTMDM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -318,6 +328,7 @@
 		73D8402024B4892700A064AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73E8FF9424F50F73000E79E6 /* ThemeSwitchCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -377,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				731E3AC724A1A5640031418E /* NTNavigationVCtrl.swift */,
+				73E8FF8A24EFC441000E79E6 /* NavigationViewController.swift */,
 			);
 			path = "Navigation（导航条）";
 			sourceTree = "<group>";
@@ -408,6 +420,8 @@
 			children = (
 				73C1E81A24C158B40083B701 /* NTCommonViewController.swift */,
 				73C1E81C24C177450083B701 /* NTCommonTableViewController.swift */,
+				73E8FF9624F5F766000E79E6 /* BaseTableViewCell.swift */,
+				73E8FF9824F5F86A000E79E6 /* BaseCollectionViewCell.swift */,
 			);
 			path = "Public（公用）";
 			sourceTree = "<group>";
@@ -432,6 +446,7 @@
 		73D8403F24B4892700A064AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				73E8FF9224F4E9A3000E79E6 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -902,6 +917,7 @@
 				731E3AE024A1A91F0031418E /* TabBarViewController.swift in Sources */,
 				73D840CD24B48A4A00A064AB /* ApplicationViewController.swift in Sources */,
 				7323F46C24D803D9008EA1D1 /* NTAlert.swift in Sources */,
+				73E8FF9724F5F766000E79E6 /* BaseTableViewCell.swift in Sources */,
 				73C1E81124C145BE0083B701 /* RedTheme.swift in Sources */,
 				73C1E82A24CADF350083B701 /* Const.swift in Sources */,
 				7323F45C24D7F078008EA1D1 /* HomeLightAppListCell.swift in Sources */,
@@ -910,12 +926,14 @@
 				73D840D124B48A5B00A064AB /* DocViewController.swift in Sources */,
 				73C1E82724C1F2640083B701 /* ThemeViewController.swift in Sources */,
 				73C1E81B24C158B40083B701 /* NTCommonViewController.swift in Sources */,
+				73E8FF8B24EFC441000E79E6 /* NavigationViewController.swift in Sources */,
 				73C1E81324C145CE0083B701 /* GrassTheme.swift in Sources */,
 				73865EF724D413C800189435 /* GXBanner.swift in Sources */,
 				73C1E81D24C177450083B701 /* NTCommonTableViewController.swift in Sources */,
 				73C1E80D24C1455D0083B701 /* MainTheme.swift in Sources */,
 				73C1E82D24CAF9B80083B701 /* NTButton.swift in Sources */,
 				73C1E81F24C17B910083B701 /* ThemeManagerProtocol.swift in Sources */,
+				73E8FF9924F5F86A000E79E6 /* BaseCollectionViewCell.swift in Sources */,
 				73865EF324D4122800189435 /* HomeBannerCell.swift in Sources */,
 				73865EF824D413C800189435 /* GXBannerFlowLayout.swift in Sources */,
 				73D840CF24B48A5200A064AB /* MsgViewController.swift in Sources */,
@@ -923,10 +941,12 @@
 				73C1E80924C13EA60083B701 /* ThemeProtocol.swift in Sources */,
 				73865EFA24D4186900189435 /* GXBannerTestCell.swift in Sources */,
 				73CAA11024D906BB00FD116A /* LightAppModel.swift in Sources */,
+				73E8FF9524F50F73000E79E6 /* ThemeSwitchCell.swift in Sources */,
 				73C1E81924C14A740083B701 /* ThemeManager.swift in Sources */,
 				73C1E82124C1DB120083B701 /* SettingViewController.swift in Sources */,
 				73D840CB24B48A3D00A064AB /* HomeViewController.swift in Sources */,
 				73C1E81724C146BE0083B701 /* DarkLightTheme.swift in Sources */,
+				73E8FF9324F4E9A3000E79E6 /* LoginViewController.swift in Sources */,
 				73C1E81524C146AE0083B701 /* LightTheme.swift in Sources */,
 				7323F45824D7EA20008EA1D1 /* LightAppCell.swift in Sources */,
 				73D840D324B48A6600A064AB /* MineViewController.swift in Sources */,

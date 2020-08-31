@@ -13,6 +13,7 @@ class NTCommonViewController: UIViewController, ThemeManagerProtocol{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.changeTheme()
+        view.backgroundColor = AppColor.themeRed
     }
 
     func changeTheme() {

@@ -148,24 +148,14 @@ public enum AppColor {
     
     static let clear = UIColor.clear
     
-    //APP主题色
+    // APP主题色
     static let themeRed = RGB0X(hexValue: 0xfd2e2e)
-    //APP红色
-    static let red = RGB0X(hexValue: 0xff2323)
-    //APP蓝色
-    static let blue = RGB0X(hexValue: 0x488ff0)
-    //APP黑色
-    static let black = RGB0X(hexValue: 0x333333)
-    //APP深灰色
-    static let darkgGray = RGB0X(hexValue: 0x666666)
-    //APP灰色
-    static let gray = RGB0X(hexValue: 0xf9f9f9)
-    //APP轻灰色
-    static let lightGray = RGB0X(hexValue: 0xf5f5f5)
-    //粗分割线
+    // 粗分割线
     static let thickSplitLine = RGB0X(hexValue: 0xF6F6F6)
-    //细分割线
+    // 细分割线
     static let fineSplitLine = RGB0X(hexValue: 0x333333)
+    // App背景色
+    static let backgroundColor = RGB0X(hexValue: 0xf2f2f2)
 }
 
 /// RGBA的颜色设置

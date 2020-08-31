@@ -70,7 +70,7 @@ class NTNavigationVCtrl: UINavigationController,UINavigationControllerDelegate {
         popViewController(animated: true)
     }
     
-    @objc func handelNotification(notification: NSNotification) {
+    @objc override func handelNotification(notification: NSNotification) {
         guard let theme = notification.object as? ThemeProtocol else {
             return
         }

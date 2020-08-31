@@ -12,6 +12,7 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.isTranslucent = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,35 +23,36 @@ class TabBarViewController: UITabBarController {
     // MARK: - 控制器的信息
     func setUpTabBar() {
         
-        let demo1VC  = HomeViewController()
-        let demo2VC  = ApplicationViewController()
-        let demo3VC  = MsgViewController()
-        let demo4VC  = DocViewController()
-        let demo5VC  = MineViewController()
+        let homeVC  = HomeViewController()
+        addChildController(homeVC, title:"首页", image:UIImage(named:"tab_home"), selectedImage:UIImage(named:"tab_home_selected"))
         
-        creatTabbarView(viewController: demo1VC, image: "tab_home", selectImage: "tab_home_selected", title: "首页")
-        creatTabbarView(viewController: demo2VC, image: "application", selectImage: "application_selected", title: "应用")
-        creatTabbarView(viewController: demo3VC, image: "tab_msg", selectImage: "tab_msg_selected", title: "消息")
-        creatTabbarView(viewController: demo4VC, image: "tab_doc", selectImage: "tab_doc_selected", title: "文档")
-        creatTabbarView(viewController: demo5VC, image: "tab_me", selectImage: "tab_me_selected", title: "我的")
+        let applicationVC  = ApplicationViewController()
+        addChildController(applicationVC, title:"应用", image:UIImage(named:"application"), selectedImage:UIImage(named:"application_selected"))
         
-        self.tabBar.tintColor = UIColor(red: 46/255.0, green: 119/255.0, blue: 254/255.0, alpha: 1)
-        self.tabBar.isTranslucent = false
+        let MsgVC  = MsgViewController()
+        addChildController(MsgVC, title:"消息", image:UIImage(named:"tab_msg"), selectedImage:UIImage(named:"tab_msg_selected"))
         
-        self.viewControllers = [
-            NTNavigationVCtrl(rootViewController: demo1VC),
-            NTNavigationVCtrl(rootViewController: demo2VC),
-            NTNavigationVCtrl(rootViewController: demo3VC),
-            NTNavigationVCtrl(rootViewController: demo4VC),
-            NTNavigationVCtrl(rootViewController: demo5VC),
-        ];
+        let docVC  = DocViewController()
+        addChildController(docVC, title:"文档", image:UIImage(named:"tab_doc"), selectedImage:UIImage(named:"tab_doc_selected"))
+        
+        let mineVC  = MineViewController()
+        addChildController(mineVC, title:"我的", image:UIImage(named:"tab_me"), selectedImage:UIImage(named:"tab_me_selected"))
     }
     
     // MARK: - TabBar里面的文字图片
-    func creatTabbarView(viewController:UIViewController, image:NSString, selectImage:NSString, title:NSString) {
-        // alwaysOriginal 始终绘制图片原始状态，不使用Tint Color。
-        viewController.tabBarItem.image = UIImage(named: image as String)?.withRenderingMode(.alwaysOriginal)
-        viewController.tabBarItem.selectedImage = UIImage(named: selectImage as String)?.withRenderingMode(.alwaysOriginal)
-        viewController.title = title as String
+    func addChildController(_ childController: UIViewController, title: String?, image: UIImage?, selectedImage: UIImage?) {
+        childController.tabBarItem = UITabBarItem(title: nil, image: image?.withRenderingMode(.alwaysOriginal), selectedImage: selectedImage?.withRenderingMode(.alwaysOriginal))
+        if UIDevice.current.userInterfaceIdiom == .phone{
+            childController.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        }
+        childController.title = title
+        addChild(NavigationViewController(rootViewController: childController))
+    }
+}
+
+extension TabBarViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        guard let select = selectedViewController else { return .lightContent }
+        return select.preferredStatusBarStyle
     }
 }

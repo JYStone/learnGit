@@ -7,33 +7,10 @@
 //
 
 import UIKit
-enum ThemeType2: Int {
-    case Main, Red, Green, Yellow, light, DarkLight
-    var themeType1: ThemeType {
-        get {
-            switch self {
-            case .Main:
-                return .mainTheme
-            case .Red:
-                return .redTheme
-            case .Green:
-                return .grassTheme
-            case .Yellow:
-                return .yellowTheme
-            case .light:
-                return .lightTheme
-            case .DarkLight:
-                return .darkLightTheme
-            }
-        }
-    }
-}
+
 class ThemeViewController: NTCommonTableViewController {
     var selectIndexRow: Int = 0
-    lazy var dataArray:[String] = {
-        let arr = ["蓝色", "红色", "黄色", "黄色", "浅色系", "深色系"]
-        return arr
-    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "主题"
@@ -45,31 +22,24 @@ class ThemeViewController: NTCommonTableViewController {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count
+        return 6
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "identifier")
+        var cell: ThemeSwitchCell? = tableView.dequeueReusableCell(withIdentifier: "themeCell") as? ThemeSwitchCell
         if cell == nil {
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "identifier")
+            cell = ThemeSwitchCell(style: .subtitle, reuseIdentifier: "identifier")
         }
         cell?.selectionStyle = .none
-        cell?.textLabel?.text = dataArray[indexPath.row]
         if indexPath.row == selectIndexRow {
             cell?.accessoryType = .checkmark
         } else {
             cell?.accessoryType = .none
         }
-        
-        if cell?.accessoryType == .checkmark {
-//            guard let cellType: ThemeType2 = ThemeType2(rawValue: indexPath.row)
-//            self.switherTheme(index: cellType))
-        }
+        cell!.configCell(index: indexPath.row)
         return cell!
     }
-    func switherTheme(index: ThemeType) {
-//        ThemeManager.switcherTheme(type: index.theme)
-    }
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectIndexRow = indexPath.row
         self.tableView.reloadData()

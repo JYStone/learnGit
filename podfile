@@ -12,4 +12,5 @@ pod 'Alamofire'
 pod 'Moya/RxSwift'
 pod 'Kingfisher'
 pod 'RxDataSources'
+pod 'QMUIKit'
 end

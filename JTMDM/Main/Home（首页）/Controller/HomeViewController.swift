@@ -16,7 +16,8 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = AppColor.themeRed
+        self.view.backgroundColor = .white
+//        self.navigationController?.barStyle(.theme)
         self.createTableView()
         // 搜索框
         self.creatSearchView()
@@ -25,6 +26,7 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
         // 四个按钮
         self.creatTopView()
         // 轻应用
+        
         // 轮播图
         // 新闻
 
@@ -33,7 +35,6 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
     // 获取轻应用列表
     func loadLightAppData() {
         guard let path = Bundle.main.path(forResource: "app010", ofType: "json") else { return }
-
     }
     // 获取新闻列表
     func loadNewsData() {
@@ -68,12 +69,12 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let footView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height:  10))
-        footView.backgroundColor = AppColor.thickSplitLine
-        return footView
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: AppFrame.ScreenWidth, height:  10))
+        headerView.backgroundColor = AppColor.thickSplitLine
+        return headerView
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height:  1))
+        let footView = UIView(frame: CGRect(x: 0, y: 0, width: AppFrame.ScreenWidth, height:  1))
         footView.backgroundColor = AppColor.thickSplitLine
         return footView
     }
@@ -120,9 +121,10 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
     }
     
     func creatTopView() {
+      let array:[String] = ["工作", "网盘", "日程", "协作"];
       for index in 0 ..< 4  {
           //按钮
-        let shareButton = UIButton.init(frame: CGRect.init(x: (AppFrame.ScreenWidth/4) * CGFloat(index), y: AppFrame.kNavigationBarHeight, width: AppFrame.ScreenWidth/4, height: 90))
+        let shareButton = UIButton.init(frame: CGRect.init(x: (AppFrame.ScreenWidth/4) * CGFloat(index), y: 0, width: AppFrame.ScreenWidth/4, height: 90))
         shareButton.backgroundColor = UIColor.blue
         shareButton.tag = 100+index
         shareButton.addTarget(self, action: #selector(shareButtonClick(button:)), for: UIControl.Event.touchUpInside)
@@ -139,10 +141,11 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
         shareButton.addSubview(textLabel)
         textLabel.textAlignment = .center
         textLabel.textColor = UIColor.white
-        textLabel.text = "share_" + String(index+1)
+        textLabel.font = UIFont.systemFont(ofSize: 14)
+        textLabel.text = array[index]
         textLabel.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
-            make.top.equalTo(bgImageView.snp.bottom).offset(3)
+            make.top.equalTo(bgImageView.snp.bottom).offset(5)
             make.height.equalTo(20)
         }
       }
@@ -159,12 +162,12 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.view.addSubview(tableView)
-        
+        NSLog(AppFrame.kNavigationBarHeight)
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview().inset(UIEdgeInsets(top: AppFrame.kNavigationBarHeight+90, left: 0, bottom: 0, right: 0))
+            make.edges.equalToSuperview().inset(UIEdgeInsets(top: 90, left: 0, bottom: 0, right: 0))
         }
     }
-    
+    //.inset(UIEdgeInsets(top: AppFrame.kNavigationBarHeight, left: 0, bottom: 0, right: 0))
     func creatSearchView() {
         let button:UIButton = UIButton.init(type: .custom)
         button.frame = CGRect.init(x: 0, y: 0, width: AppFrame.ScreenWidth-60-16, height: 30)
