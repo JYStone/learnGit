@@ -91,7 +91,6 @@ class ThemeSwitchCell: UITableViewCell {
     func switherTheme(type: CellTitleType) {
         ThemeManager.switcherTheme(type: type.themeType)
         // 缓存一下本地存储的颜色
-        UserDefaults.
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

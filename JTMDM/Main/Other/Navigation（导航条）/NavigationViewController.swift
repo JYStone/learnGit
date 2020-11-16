@@ -129,6 +129,7 @@ extension UINavigationController {
         }
         NSLog(theme.themeColor)
         navigationBar.setBackgroundImage(UIImage.createImageWithColor(color: theme.themeColor), for: .default)
+        navigationBar.tintColor = theme.navigationTintColor
     }
 }
 
