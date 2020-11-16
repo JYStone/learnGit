@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		731CC69525625E0900627C19 /* zuimei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CC69425625E0900627C19 /* zuimei.swift */; };
+		731CC69925626A8E00627C19 /* pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CC69825626A8D00627C19 /* pdf.swift */; };
 		731E3A9424A1A07C0031418E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3A9324A1A07C0031418E /* AppDelegate.swift */; };
 		731E3A9B24A1A07C0031418E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731E3A9924A1A07C0031418E /* Main.storyboard */; };
 		731E3A9D24A1A0850031418E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731E3A9C24A1A0850031418E /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		362F139FC7652EB44CB0DDBB /* Pods-JTMDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTMDM.debug.xcconfig"; path = "Target Support Files/Pods-JTMDM/Pods-JTMDM.debug.xcconfig"; sourceTree = "<group>"; };
 		4722860BBD24E8609080C3B8 /* Pods_JTMDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTMDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		731CC69425625E0900627C19 /* zuimei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zuimei.swift; sourceTree = "<group>"; };
+		731CC69825626A8D00627C19 /* pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pdf.swift; sourceTree = "<group>"; };
 		731E3A9024A1A07C0031418E /* JTMDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTMDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731E3A9324A1A07C0031418E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		731E3A9A24A1A07C0031418E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				73D840CA24B48A3D00A064AB /* HomeViewController.swift */,
 				731CC69425625E0900627C19 /* zuimei.swift */,
+				731CC69825626A8D00627C19 /* pdf.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -951,6 +954,7 @@
 				73D840CB24B48A3D00A064AB /* HomeViewController.swift in Sources */,
 				73C1E81724C146BE0083B701 /* DarkLightTheme.swift in Sources */,
 				73E8FF9324F4E9A3000E79E6 /* LoginViewController.swift in Sources */,
+				731CC69925626A8E00627C19 /* pdf.swift in Sources */,
 				73C1E81524C146AE0083B701 /* LightTheme.swift in Sources */,
 				7323F45824D7EA20008EA1D1 /* LightAppCell.swift in Sources */,
 				73D840D324B48A6600A064AB /* MineViewController.swift in Sources */,
