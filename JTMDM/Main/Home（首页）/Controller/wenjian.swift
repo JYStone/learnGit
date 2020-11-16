@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  wenjian.swift
 //  JTMDM
 //
 //  Created by 南天 on 2020/7/7.
@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 import SnapKit
 import HandyJSON
-class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableViewDataSource{
+class wenjian: NTCommonViewController, UITableViewDelegate, UITableViewDataSource{
     var tableView = UITableView()
     
     
@@ -22,7 +22,6 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
         // 搜索框
         self.creatSearchView()
         // 扫描框
-        self.creatSearchView()
         self.createRightItemButton()
         // 四个按钮
         self.creatTopView()
