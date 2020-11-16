@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		731CC69525625E0900627C19 /* zuimei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CC69425625E0900627C19 /* zuimei.swift */; };
 		731E3A9424A1A07C0031418E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E3A9324A1A07C0031418E /* AppDelegate.swift */; };
 		731E3A9B24A1A07C0031418E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731E3A9924A1A07C0031418E /* Main.storyboard */; };
 		731E3A9D24A1A0850031418E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731E3A9C24A1A0850031418E /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 /* Begin PBXFileReference section */
 		362F139FC7652EB44CB0DDBB /* Pods-JTMDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTMDM.debug.xcconfig"; path = "Target Support Files/Pods-JTMDM/Pods-JTMDM.debug.xcconfig"; sourceTree = "<group>"; };
 		4722860BBD24E8609080C3B8 /* Pods_JTMDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTMDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		731CC69425625E0900627C19 /* zuimei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zuimei.swift; sourceTree = "<group>"; };
 		731E3A9024A1A07C0031418E /* JTMDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTMDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731E3A9324A1A07C0031418E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		731E3A9A24A1A07C0031418E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				73D840CA24B48A3D00A064AB /* HomeViewController.swift */,
+				731CC69425625E0900627C19 /* zuimei.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -941,6 +944,7 @@
 				73C1E80924C13EA60083B701 /* ThemeProtocol.swift in Sources */,
 				73865EFA24D4186900189435 /* GXBannerTestCell.swift in Sources */,
 				73CAA11024D906BB00FD116A /* LightAppModel.swift in Sources */,
+				731CC69525625E0900627C19 /* zuimei.swift in Sources */,
 				73E8FF9524F50F73000E79E6 /* ThemeSwitchCell.swift in Sources */,
 				73C1E81924C14A740083B701 /* ThemeManager.swift in Sources */,
 				73C1E82124C1DB120083B701 /* SettingViewController.swift in Sources */,
