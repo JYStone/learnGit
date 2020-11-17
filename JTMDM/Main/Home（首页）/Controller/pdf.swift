@@ -27,6 +27,8 @@ class pdf: NTCommonViewController, UITableViewDelegate, UITableViewDataSource{
         self.creatSearchView()
         self.creatSearchView()
         self.createRightItemButton()
+        self.createRightItemButton()
+        self.createRightItemButton()
         // 四个按钮
         self.creatTopView()
         // 轻应用
