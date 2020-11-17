@@ -22,6 +22,9 @@ class zuimei: NTCommonViewController, UITableViewDelegate, UITableViewDataSource
         // 搜索框
         self.creatSearchView()
         // 扫描框
+        self.createTableView()
+        self.createTableView()
+        self.createTableView()
         self.createRightItemButton()
         // 四个按钮
         self.creatTopView()
