@@ -24,6 +24,12 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
         // 扫描框
         self.creatSearchView()
         self.createRightItemButton()
+        
+        self.creatSearchView()
+        self.createRightItemButton()
+        
+        self.creatSearchView()
+        self.createRightItemButton()
         // 四个按钮
         self.creatTopView()
         // 轻应用
