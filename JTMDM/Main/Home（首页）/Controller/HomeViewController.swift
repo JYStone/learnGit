@@ -20,6 +20,22 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
 //        self.navigationController?.barStyle(.theme)
         self.createTableView()
         // 搜索框
+        
+        // 扫描框
+        self.creatSearchView()
+        self.createRightItemButton()
+        
+        self.creatSearchView()
+        self.createRightItemButton()
+        
+        self.creatSearchView()
+        self.createRightItemButton()
+        // 四个按钮
+        self.creatTopView()
+        // 轻应用
+        
+        // 轮播图
+        // 新闻
         self.creatSearchView()
         // 扫描框
         self.creatSearchView()
