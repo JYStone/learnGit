@@ -25,6 +25,7 @@ class HomeViewController: NTCommonViewController, UITableViewDelegate, UITableVi
         self.creatSearchView()
         self.createRightItemButton()
         1
+        2
         self.creatSearchView()
         self.createRightItemButton()
         
